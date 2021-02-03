@@ -1,5 +1,7 @@
 # MonitorProbe
 
+![SwaggerPage](https://github.com/OutSystems/MonitorProbe/blob/main/Documentation/images/MonitorProbe_PlatformLogsSwagger.png)
+
 # What is
 It's a OutSystems Forge application that allows to access all [OutSystems monitoring data](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/Logging_database_and_architecture) through as REST APIs.
 
