@@ -18,7 +18,7 @@ _https://&lt;Your Environment URL>/MonitorProbe/rest/PlatformLogs/_
 
 # How to use Monitor Probe (OutSystems configurations you need to assure)
 1. Go to LifeTime and create a service account to access LifetimeAPI methods (applicable if the lifetime version is 11.5 or higher)
-![ServiceAccountConfig](CreateServiceAccount.png)
+![ServiceAccountConfig](Documentation/images/CreateServiceAccount.png)
 2. Save the token of the service account created previously
 3. Create an IT user with a default role that has the minimum permission level to access the logs
 ![Create_IT_User](CreateITUser.png)
