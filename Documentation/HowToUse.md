@@ -18,17 +18,24 @@ _https://&lt;Your Environment URL>/MonitorProbe/rest/PlatformLogs/_
 
 # How to use Monitor Probe (OutSystems configurations you need to assure)
 1. Go to LifeTime and create a service account to access LifetimeAPI methods (applicable if the lifetime version is 11.5 or higher)
+
 ![ServiceAccountConfig](https://github.com/OutSystems/MonitorProbe/blob/main/Documentation/images/CreateServiceAccount.png)
-2. Save the token of the service account created previously
-3. Create an IT user with a default role that has the minimum permission level to access the logs
+2. The service account needs to have a role with permissions to Manage Infrastructure and Users in order to be able to access some of LifetimeAPI methods
+
+![ServiceAccountRolePermissions](https://github.com/OutSystems/MonitorProbe/blob/main/Documentation/images/ServiceAccountRolePermissions.png)
+3. Save the token of the service account created previously
+4. Create an IT user with a default role that has the minimum permission level to access the logs
+
 ![Create_IT_User](https://github.com/OutSystems/MonitorProbe/blob/main/Documentation/images/CreateITUser.png)
-4. Install/Update the MonitorProbe
-5. Now go to the detail of the module in service center and open the tab site properties
+5. Install/Update the MonitorProbe
+6. Now go to the detail of the module in service center and open the tab site properties
+
 ![ModuleDetail](https://github.com/OutSystems/MonitorProbe/blob/main/Documentation/images/ServiceCenterSitePropertiesDetail.png)
-6. Set the effective value of the site property **Authentication_ServiceAccountToken** with the token that you saved on step 3
-7. Set the effective value of the site property **MinimumPermissionLevelLabel** with the permission label that the default role has on the environment where you have installed the MonitorProbe
+7. Set the effective value of the site property **Authentication_ServiceAccountToken** with the token that you saved on step 3
+8. Set the effective value of the site property **MinimumPermissionLevelLabel** with the permission label that the default role has on the environment where you have installed the MonitorProbe
+
 ![RoleConfiguration](https://github.com/OutSystems/MonitorProbe/blob/main/Documentation/images/RoleConfiguration.png)
-8. Set the effective value of the site property **TimeToForceAuthentication** with the number of minutes that represent the period of time since the first access until you want to force a new check of user authorization level.
+9. Set the effective value of the site property **TimeToForceAuthentication** with the number of minutes that represent the period of time since the first access until you want to force a new check of user authorization level.
 
 
 
