@@ -41,6 +41,10 @@ _https://&lt;Your Environment URL>/MonitorProbe/rest/PlatformLogs/_
 
 9. Set the effective value of the site property **TimeToForceAuthentication** with the number of minutes that represent the period of time since the first access until you want to force a new check of user authorization level.
 
+10. Now go to the Integrations and change the base URL of the LifetimeRESTAPI to be with the URL of the environment where is your LifeTime
+
+![ServiceCenterIntegrationsDetail](https://github.com/OutSystems/MonitorProbe/blob/main/Documentation/images/ServiceCenterIntegrationsDetail.png)
+
 
 
 
